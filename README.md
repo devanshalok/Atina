@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Atina
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Atina** is a job application enhancement tool designed to help users optimize their resumes according to specific job descriptions (JDs). With Atina, users can upload their resume and a JD, and the tool will guide them in adjusting their resume to better align with the requirements of the job. The project is currently built with React and will soon be enhanced with a backend and AI-based features to automate and further refine the resume optimization process.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+Applying for jobs often requires tailoring resumes to highlight relevant skills, experience, and achievements based on the JD. Atina makes this process easier by providing a streamlined interface where users can directly compare their resume with the JD, making it easy to edit and align content for maximum impact.
 
-### `npm start`
+### Future Enhancements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Backend Integration**: To enable secure storage and advanced processing.
+- **AI-Powered Recommendations**: Planned updates will use AI to automatically suggest changes, add missing skills, and highlight keywords that align with the JD.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Follow these instructions to set up and run the project on your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- **Node.js**: Ensure Node.js is installed for managing dependencies and running the application.
+- **React**: The frontend framework for the project interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/devanshalok/atina.git
+   cd atina
+   ```
 
-### `npm run eject`
+2. **Install Dependencies**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Run the following command to install the necessary packages:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Start the Development Server**:
 
-## Learn More
+   In the root directory, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   The application will be available at `http://localhost:3000`.
 
-### Code Splitting
+2. **Using the Application**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - **Upload Resume and Job Description**: Users can upload their resumes and JD files in supported formats (e.g., PDF, DOCX).
+   - **Edit Resume to Match JD**: The interface displays both documents side-by-side, allowing users to edit the resume directly in the app, making adjustments to align with the JD.
+   - **Download Updated Resume**: After editing, users can download the optimized version of their resume.
 
-### Analyzing the Bundle Size
+## Future Plans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Backend Development**:
+   - Implement a backend server to handle secure data storage and user authentication.
+   - Enable saving user progress and managing multiple resumes.
 
-### Making a Progressive Web App
+2. **AI-Based Features**:
+   - Integrate natural language processing (NLP) to analyze the JD and provide relevant recommendations.
+   - Suggest keywords, skills, and phrasing adjustments based on the JD.
+   - Highlight gaps or areas for improvement in the resume compared to the JD requirements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Built With
 
-### Advanced Configuration
+- **React.js** - Frontend framework for the user interface.
+- **Node.js** - Package management for project setup.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are welcome! Please see the `CONTRIBUTING.md` file for guidelines on code contributions, reporting issues, and submitting pull requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Authors
 
-### `npm run build` fails to minify
+- **Devansh Alok** - Initial work - [devanshalok](https://github.com/devanshalok)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.
+
+## Acknowledgments
+
+- Inspiration from resume-building and job application platforms.
+- Thanks to contributors and the community for supporting open-source projects.
