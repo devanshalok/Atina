@@ -10,7 +10,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 
 function App() {
-  // Existing state and handlers
   const [uploadedFile, setUploadedFile] = useState(null);
   const [textInput, setTextInput] = useState('');
   const [showPDFContent, setShowPDFContent] = useState(false);
