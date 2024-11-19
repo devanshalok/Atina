@@ -8,6 +8,7 @@ import PDFViewer from './components/PDFViewer';
 import Services from './components/Services';
 import About from './components/About';
 import Contact from './components/Contact';
+import TextSection from './components/TextSection';
 
 function App() {
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -42,18 +43,24 @@ function App() {
           <Route
             path="/"
             element={
-              <div className="container mx-auto mt-12 px-4">
-                <div className="flex flex-col items-center">
-                  <UploadArea
-                    onFileUpload={handleFileUpload}
-                    onFileRemove={handleFileRemove}
-                    uploadedFile={uploadedFile}
-                  />
-                  <DynamicTextarea onTextChange={handleTextChange} />
-                  <SubmitButton isActive={isActive} onClick={handleSubmit} />
-                  {showPDFContent && uploadedFile && uploadedFile.type === 'application/pdf' && (
-                    <PDFViewer file={uploadedFile} />
-                  )}
+              <div className="container mx-auto mt-12 px-4 py-16">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-12">
+                  {/* Left Section - Text Section */}
+                  <TextSection />
+
+                  {/* Right Section - Upload Area and Dynamic Textarea */}
+                  <div className="flex flex-col items-center lg:w-1/2 space-y-6">
+                    <UploadArea
+                      onFileUpload={handleFileUpload}
+                      onFileRemove={handleFileRemove}
+                      uploadedFile={uploadedFile}
+                    />
+                    <DynamicTextarea onTextChange={handleTextChange} />
+                    <SubmitButton isActive={isActive} onClick={handleSubmit} />
+                    {showPDFContent && uploadedFile && uploadedFile.type === 'application/pdf' && (
+                      <PDFViewer file={uploadedFile} />
+                    )}
+                  </div>
                 </div>
               </div>
             }

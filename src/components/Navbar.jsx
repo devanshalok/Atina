@@ -37,7 +37,7 @@ function Navbar() {
           </li>
           <li>
             <a href="/services" className="text-darkgray hover:text-primary transition duration-300">
-              Services
+              My Resumes
             </a>
           </li>
           <li>
